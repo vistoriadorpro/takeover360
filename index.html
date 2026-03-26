@@ -1,0 +1,983 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rodrigo de Assis | Parcerias Estratégicas para Corretores</title>
+   <meta name="description" content="Assuma o controle do seu estoque parado. Eu assumo as locações com o Método Takeover 360º e você recebe sua parte. Parceria de risco zero para seu caixa.">
+  
+   <!-- Tailwind CSS -->
+   <script src="https://cdn.tailwindcss.com"></script>
+  
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+   <!-- Lucide Icons -->
+   <script src="https://unpkg.com/lucide@latest"></script>
+  
+   <script>
+       tailwind.config = {
+           theme: {
+               extend: {
+                   colors: {
+                       'primary': '#4F46E5',
+                       'primary-dark': '#3730A3',
+                       'accent': '#EA580C',
+                       'accent-light': '#FFEDD5',
+                       'secondary': '#059669',
+                       'gold': '#D97706',
+                       'cinza-claro': '#F9FAFB',
+                       'cinza-escuro': '#4B5563',
+                   },
+                   fontFamily: {
+                       'sans': ['Inter', 'system-ui', 'sans-serif'],
+                   }
+               }
+           }
+       }
+   </script>
+  
+   <style>
+       body {
+           background-color: #ffffff;
+           color: #1F2937;
+       }
+      
+       .text-gradient {
+           background: linear-gradient(135deg, #4F46E5 0%, #EA580C 100%);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           background-clip: text;
+       }
+      
+       .reveal {
+           opacity: 0;
+           transform: translateY(30px);
+           transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+       }
+      
+       .reveal.active {
+           opacity: 1;
+           transform: translateY(0);
+       }
+      
+       .hover-lift {
+           transition: transform 0.3s ease, box-shadow 0.3s ease;
+       }
+      
+       .hover-lift:hover {
+           transform: translateY(-5px);
+           box-shadow: 0 20px 40px -15px rgba(79, 70, 229, 0.25);
+       }
+      
+       .btn-primary {
+           background: linear-gradient(135deg, #4F46E5 0%, #3730A3 100%);
+           color: white;
+           transition: all 0.3s ease;
+       }
+      
+       .btn-primary:hover {
+           transform: translateY(-2px);
+           box-shadow: 0 10px 30px -10px rgba(79, 70, 229, 0.5);
+       }
+      
+       .btn-secondary {
+           background: linear-gradient(135deg, #EA580C 0%, #D97706 100%);
+           color: white;
+           transition: all 0.3s ease;
+       }
+      
+       .btn-secondary:hover {
+           transform: translateY(-2px);
+           box-shadow: 0 10px 30px -10px rgba(234, 88, 12, 0.5);
+       }
+      
+       .btn-outline {
+           background: transparent;
+           border: 2px solid #4F46E5;
+           color: #4F46E5;
+           transition: all 0.3s ease;
+       }
+      
+       .btn-outline:hover {
+           background: #4F46E5;
+           color: white;
+           transform: translateY(-2px);
+       }
+      
+       .line-separator {
+           height: 2px;
+           background: linear-gradient(90deg, transparent 0%, #4F46E5 50%, #EA580C 100%);
+       }
+      
+       ::selection {
+           background: #4F46E5;
+           color: white;
+       }
+      
+       @keyframes bounce {
+           0%, 100% { transform: translateY(-25%) translateX(-50%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+           50% { transform: translateY(0) translateX(-50%); animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+       }
+       
+       .animate-bounce {
+           animation: bounce 1s infinite;
+       }
+      
+       .border-premium {
+           border: 1px solid rgba(79, 70, 229, 0.1);
+       }
+      
+       .bg-gradient-premium {
+           background: linear-gradient(135deg, #ffffff 0%, #F9FAFB 100%);
+       }
+      
+       .card-gradient {
+           background: linear-gradient(135deg, #ffffff 0%, #FEF3F2 100%);
+       }
+      
+       .trust-box {
+           background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, rgba(234, 88, 12, 0.05) 100%);
+           backdrop-filter: blur(4px);
+           transition: all 0.3s ease;
+       }
+      
+       .trust-box:hover {
+           background: linear-gradient(135deg, rgba(79, 70, 229, 0.1) 0%, rgba(234, 88, 12, 0.1) 100%);
+           transform: translateY(-3px);
+       }
+      
+       .online-badge {
+           animation: pulse 2s infinite;
+       }
+      
+       @keyframes pulse {
+           0% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.4); }
+           70% { box-shadow: 0 0 0 10px rgba(5, 150, 105, 0); }
+           100% { box-shadow: 0 0 0 0 rgba(5, 150, 105, 0); }
+       }
+   </style>
+</head>
+<body class="font-sans antialiased overflow-x-hidden bg-white text-gray-900">
+
+
+
+
+   <!-- Navigation -->
+   <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 transition-all duration-300 shadow-sm" id="navbar">
+       <div class="max-w-7xl mx-auto px-6 lg:px-8">
+           <div class="flex justify-between items-center h-20">
+               <div class="flex items-center gap-3">
+                   <div class="w-10 h-10 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center shadow-lg shadow-primary/30">
+                       <i data-lucide="handshake" class="w-5 h-5 text-white"></i>
+                   </div>
+                   <div>
+                       <span class="font-bold text-lg tracking-tight text-gray-900">RODRIGO DE ASSIS</span>
+                       <p class="text-xs text-primary tracking-widest uppercase font-semibold">Parcerias Estratégicas</p>
+                   </div>
+               </div>
+              
+               <div class="hidden md:flex items-center gap-8">
+                   <a href="#desafio" class="text-sm text-gray-600 hover:text-primary transition-colors uppercase tracking-wider font-medium">O Desafio</a>
+                   <a href="#metodo" class="text-sm text-gray-600 hover:text-primary transition-colors uppercase tracking-wider font-medium">Takeover 360º</a>
+                   <a href="#modelos" class="text-sm text-gray-600 hover:text-primary transition-colors uppercase tracking-wider font-medium">Modelos</a>
+                   <a href="#autoridade" class="text-sm text-gray-600 hover:text-primary transition-colors uppercase tracking-wider font-medium">Autoridade</a>
+               </div>
+
+
+
+
+               <a href="https://wa.me/5521990650767?text=Olá%20Rodrigo,%20quero%20ser%20um%20corretor%20parceiro%20e%20locar%20meu%20estoque%20parado"
+                  target="_blank"
+                  class="hidden md:flex items-center gap-2 btn-secondary px-6 py-3 rounded-full font-semibold text-sm uppercase tracking-wider shadow-md">
+                   <i data-lucide="users" class="w-4 h-4"></i>
+                   Quero ser Parceiro
+               </a>
+
+
+
+
+               <button class="md:hidden text-gray-700" id="mobile-menu-btn">
+                   <i data-lucide="menu" class="w-6 h-6"></i>
+               </button>
+           </div>
+       </div>
+
+
+
+
+       <!-- Mobile Menu -->
+       <div class="hidden md:hidden bg-white border-t border-gray-100" id="mobile-menu">
+           <div class="px-6 py-4 space-y-4">
+               <a href="#desafio" class="block text-sm text-gray-600 hover:text-primary uppercase tracking-wider">O Desafio</a>
+               <a href="#metodo" class="block text-sm text-gray-600 hover:text-primary uppercase tracking-wider">Takeover 360º</a>
+               <a href="#modelos" class="block text-sm text-gray-600 hover:text-primary uppercase tracking-wider">Modelos</a>
+               <a href="#autoridade" class="block text-sm text-gray-600 hover:text-primary uppercase tracking-wider">Autoridade</a>
+               <a href="https://wa.me/5521990650767?text=Olá%20Rodrigo,%20quero%20ser%20um%20corretor%20parceiro%20e%20locar%20meu%20estoque%20parado" class="block btn-secondary px-6 py-3 rounded-full font-semibold text-center text-sm uppercase tracking-wider mt-4">
+                   Quero ser Parceiro
+               </a>
+           </div>
+       </div>
+   </nav>
+
+
+
+
+   <!-- Hero Section - B2B -->
+   <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-gradient-to-br from-primary/5 via-white to-accent/5">
+       <div class="absolute inset-0 z-0">
+           <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80" alt="Parceria de negócios" class="w-full h-full object-cover opacity-10">
+       </div>
+
+
+
+
+       <div class="relative z-10 max-w-5xl mx-auto px-6 lg:px-8 text-center">
+           <div class="reveal active">
+               <div class="inline-block mb-6">
+                   <span class="bg-accent/10 text-accent text-xs font-bold px-5 py-2.5 rounded-full uppercase tracking-widest shadow-sm border border-accent/20">
+                       IMÓVEL ENCALHADO NUNCA MAIS
+                   </span>
+               </div>
+              
+               <h1 class="font-bold text-4xl md:text-6xl lg:text-7xl leading-tight mb-6 text-gray-900">
+                   Transforme seu estoque parado em <span class="text-gradient">dinheiro no bolso</span>.
+               </h1>
+               
+               <p class="text-xl md:text-2xl font-semibold text-gray-800 mb-4">
+                   Eu assumo as locações, você recebe a sua parte.
+               </p>
+              
+               <p class="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+                   Traga as suas captações. Eu aplico meu <span class="text-primary font-semibold">Takeover 360º</span> (Tráfego Pago, Landing Pages, Vistoria e Jurídico) para locar seu imóvel em tempo recorde. <span class="text-gray-900 font-semibold">Risco zero para o seu caixa.</span>
+               </p>
+
+
+
+
+               <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                   <a href="https://wa.me/5521990650767?text=Olá%20Rodrigo,%20quero%20ser%20um%20corretor%20parceiro%20e%20locar%20meu%20estoque%20parado"
+                      target="_blank"
+                      class="btn-secondary px-10 py-5 rounded-full font-bold text-lg uppercase tracking-wider flex items-center gap-3 w-full sm:w-auto justify-center shadow-xl shadow-accent/30">
+                       <span>Quero ser um Corretor Parceiro</span>
+                       <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                   </a>
+                  
+                   <div class="flex items-center gap-2 text-sm text-gray-500">
+                       <i data-lucide="shield-check" class="w-4 h-4 text-primary"></i>
+                       <span>CRECI SP 49368-J</span>
+                   </div>
+               </div>
+
+
+
+
+               <!-- Trust Badges - Boxes mais atraentes (sem o box Imóvel encalhado nunca mais) -->
+               <div class="mt-16 flex flex-wrap justify-center gap-6">
+                   <div class="trust-box flex items-center gap-3 px-6 py-4 rounded-2xl border border-primary/20 shadow-md">
+                       <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                           <i data-lucide="shield" class="w-5 h-5 text-primary"></i>
+                       </div>
+                       <div class="text-left">
+                           <p class="font-bold text-gray-900">Risco zero</p>
+                           <p class="text-xs text-gray-500">para seu caixa</p>
+                       </div>
+                   </div>
+                   <div class="trust-box flex items-center gap-3 px-6 py-4 rounded-2xl border border-primary/20 shadow-md">
+                       <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                           <i data-lucide="handshake" class="w-5 h-5 text-primary"></i>
+                       </div>
+                       <div class="text-left">
+                           <p class="font-bold text-gray-900">Divisão transparente</p>
+                           <p class="text-xs text-gray-500">sem surpresas</p>
+                       </div>
+                   </div>
+                   <div class="trust-box flex items-center gap-3 px-6 py-4 rounded-2xl border border-primary/20 shadow-md">
+                       <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                           <i data-lucide="bar-chart-3" class="w-5 h-5 text-primary"></i>
+                       </div>
+                       <div class="text-left">
+                           <p class="font-bold text-gray-900">Metodologia comprovada</p>
+                           <p class="text-xs text-gray-500">+600 imóveis locados</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+
+
+
+       <!-- Scroll Indicator -->
+       <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+           <i data-lucide="chevron-down" class="w-6 h-6 text-primary opacity-50"></i>
+       </div>
+   </section>
+
+
+
+
+   <!-- A Dor do Corretor -->
+   <section id="desafio" class="py-24 bg-gray-50 relative">
+       <div class="max-w-7xl mx-auto px-6 lg:px-8">
+           <div class="grid md:grid-cols-2 gap-16 items-center">
+               <div class="reveal">
+                   <div class="inline-block px-4 py-2 bg-accent/10 border border-accent/20 rounded-full mb-6">
+                       <span class="text-accent text-xs uppercase tracking-widest font-semibold">A Realidade</span>
+                   </div>
+                  
+                   <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
+                       Captar é difícil. <span class="text-accent">Locar rápido</span> é o verdadeiro desafio.
+                   </h2>
+                  
+                   <div class="space-y-5 text-gray-600 text-lg leading-relaxed">
+                       <p>
+                           Você suou para conseguir a exclusividade daquele imóvel incrível, mas agora ele está perdido no meio de milhares de anúncios nos portais.
+                       </p>
+                       <p>
+                           Você gasta com impulsionamento, atende leads desqualificados, lida com a pressão do proprietário e o tempo passa.
+                       </p>
+                       <p class="font-semibold text-gray-800">
+                           Chegou a hora de destravar a sua esteira de locações.
+                       </p>
+                   </div>
+
+
+
+
+                   <div class="mt-8 flex items-start gap-4 p-6 bg-white border border-gray-200 rounded-xl shadow-sm">
+                       <i data-lucide="trending-up" class="w-6 h-6 text-primary flex-shrink-0 mt-1"></i>
+                       <div>
+                           <p class="text-gray-900 font-semibold mb-1">O custo da lentidão</p>
+                           <p class="text-sm text-gray-500">Cada imóvel parado por mais de 60 dias representa uma oportunidade perdida de girar capital e conquistar novas captações.</p>
+                       </div>
+                   </div>
+               </div>
+
+
+
+
+               <div class="reveal relative">
+                   <div class="absolute -inset-4 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-2xl opacity-50"></div>
+                   <div class="relative bg-white rounded-2xl shadow-2xl p-8 border border-gray-100">
+                       <div class="flex items-center justify-between mb-6">
+                           <div class="flex items-center gap-3">
+                               <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                                   <i data-lucide="clock" class="w-6 h-6 text-accent"></i>
+                               </div>
+                               <span class="text-gray-900 font-bold">Tempo médio de locação</span>
+                           </div>
+                           <span class="text-3xl font-bold text-accent">92 dias</span>
+                       </div>
+                       <div class="w-full bg-gray-200 rounded-full h-3 mb-4">
+                           <div class="bg-accent h-3 rounded-full" style="width: 85%"></div>
+                       </div>
+                       <p class="text-sm text-gray-500">Mercado tradicional de locação em São Paulo</p>
+                       
+                       <!-- Novo box: Tempo médio com Takeover 360º -->
+                       <div class="mt-8 pt-6 border-t border-gray-100">
+                           <div class="flex items-center justify-between">
+                               <div class="flex items-center gap-3">
+                                   <div class="w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center">
+                                       <i data-lucide="zap" class="w-5 h-5 text-secondary"></i>
+                                   </div>
+                                   <span class="text-gray-700 font-medium">Com Takeover 360º</span>
+                               </div>
+                               <div class="text-right">
+                                   <span class="text-2xl font-bold text-secondary">18</span>
+                                   <span class="text-gray-500 text-sm"> dias</span>
+                               </div>
+                           </div>
+                           <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
+                               <div class="bg-secondary h-2 rounded-full" style="width: 20%"></div>
+                           </div>
+                           <p class="text-xs text-gray-400 mt-2">Redução de 80% no tempo de locação</p>
+                       </div>
+                       
+                       <div class="mt-6 pt-4 border-t border-gray-100">
+                           <div class="flex items-center justify-between text-sm">
+                               <span class="text-gray-500">Sua comissão garantida</span>
+                               <span class="text-gray-900 font-bold">40% a 30% do valor</span>
+                           </div>
+                           <p class="text-xs text-gray-400 mt-1">Você recebe sua parte assim que a locação for concretizada</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+
+
+   <!-- O Método Takeover 360º -->
+   <section id="metodo" class="py-24 bg-white relative">
+       <div class="max-w-7xl mx-auto px-6 lg:px-8">
+           <div class="text-center mb-16 reveal">
+               <span class="text-primary text-sm uppercase tracking-[0.3em] font-semibold">Takeover 360º</span>
+               <h2 class="text-3xl md:text-5xl font-bold mt-4 mb-6 text-gray-900">
+                   Como eu acelero <span class="text-gradient">as suas captações</span>
+               </h2>
+               <div class="line-separator max-w-md mx-auto mt-8"></div>
+           </div>
+
+
+
+
+           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+               <!-- Bloco 1 -->
+               <div class="reveal hover-lift bg-gradient-premium p-8 rounded-2xl border border-gray-100 shadow-lg group">
+                   <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                       <i data-lucide="rocket" class="w-7 h-7 text-primary"></i>
+                   </div>
+                   <h3 class="text-xl font-bold mb-3 text-gray-900">Marketing de Lançamento</h3>
+                   <p class="text-gray-500 text-sm leading-relaxed">
+                       Nada de Zap Imóveis. Eu crio uma Landing Page exclusiva para o seu imóvel e injeto Tráfego Pago cirúrgico com o meu próprio cartão.
+                   </p>
+                   <div class="mt-6 pt-6 border-t border-gray-100">
+                       <span class="text-xs text-primary uppercase tracking-wider font-semibold">Investimento zero</span>
+                   </div>
+               </div>
+
+
+
+
+               <!-- Bloco 2 -->
+               <div class="reveal hover-lift bg-gradient-premium p-8 rounded-2xl border border-gray-100 shadow-lg group" style="transition-delay: 100ms;">
+                   <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                       <i data-lucide="users" class="w-7 h-7 text-primary"></i>
+                   </div>
+                   <h3 class="text-xl font-bold mb-3 text-gray-900">Curadoria e Filtro</h3>
+                   <p class="text-gray-500 text-sm leading-relaxed">
+                       Eu assumo o front comercial. Filtro curiosos, faço a análise de crédito e só levo para a visita quem tem real intenção de locar.
+                   </p>
+                   <div class="mt-6 pt-6 border-t border-gray-100">
+                       <span class="text-xs text-primary uppercase tracking-wider font-semibold">Leads qualificados</span>
+                   </div>
+               </div>
+
+
+
+
+               <!-- Bloco 3 -->
+               <div class="reveal hover-lift bg-gradient-premium p-8 rounded-2xl border border-gray-100 shadow-lg group" style="transition-delay: 200ms;">
+                   <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                       <i data-lucide="file-check" class="w-7 h-7 text-primary"></i>
+                   </div>
+                   <h3 class="text-xl font-bold mb-3 text-gray-900">Vistoria PRO e Laudo</h3>
+                   <p class="text-gray-500 text-sm leading-relaxed">
+                       Sou especialista técnico. Emito o Laudo Prévio do imóvel para blindar o valor do aluguel, matando objeções sobre condições estruturais.
+                   </p>
+                   <div class="mt-6 pt-6 border-t border-gray-100">
+                       <span class="text-xs text-primary uppercase tracking-wider font-semibold">Proteção do valor</span>
+                   </div>
+               </div>
+
+
+
+
+               <!-- Bloco 4 -->
+               <div class="reveal hover-lift bg-gradient-premium p-8 rounded-2xl border border-gray-100 shadow-lg group" style="transition-delay: 300ms;">
+                   <div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                       <i data-lucide="scale" class="w-7 h-7 text-primary"></i>
+                   </div>
+                   <h3 class="text-xl font-bold mb-3 text-gray-900">Blindagem Jurídica</h3>
+                   <p class="text-gray-500 text-sm leading-relaxed">
+                       Da proposta à assinatura do contrato de locação, estruturo os documentos para garantir uma negociação segura e sem pontas soltas.
+                   </p>
+                   <div class="mt-6 pt-6 border-t border-gray-100">
+                       <span class="text-xs text-primary uppercase tracking-wider font-semibold">Segurança total</span>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+
+
+   <!-- Modelos de Parceria -->
+   <section id="modelos" class="py-24 bg-gradient-to-b from-gray-50 to-white relative">
+       <div class="max-w-7xl mx-auto px-6 lg:px-8">
+           <div class="text-center mb-16 reveal">
+               <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-4">
+                   <i data-lucide="handshake" class="w-4 h-4 text-primary"></i>
+                   <span class="text-primary text-xs uppercase tracking-widest font-semibold">Transparência Total</span>
+               </div>
+               <h2 class="text-3xl md:text-5xl font-bold mb-6 text-gray-900">
+                   Escolha o seu modelo de lucro
+               </h2>
+               <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                   Transparência total na parceria. Você escolhe como quer trabalhar.
+               </p>
+           </div>
+
+
+
+
+           <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+               <!-- Card 1 - Parceria Aceleração -->
+               <div class="reveal hover-lift bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+                   <div class="bg-gradient-to-r from-primary to-primary-dark p-6 text-white">
+                       <div class="flex justify-between items-start">
+                           <div>
+                               <h3 class="text-2xl font-bold">Parceria Aceleração</h3>
+                               <p class="text-primary-100 text-sm mt-1 opacity-90">Locação em até 20 dias</p>
+                           </div>
+                           <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                               <i data-lucide="zap" class="w-6 h-6 text-white"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="p-8">
+                       <p class="text-gray-600 mb-6 leading-relaxed">
+                           Nós dividimos a operação e eu injeto meu método de locações rápidas.
+                       </p>
+                       
+                       <div class="space-y-4 mb-8">
+                           <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+                               <span class="text-gray-500">Locação em até 20 dias</span>
+                               <span class="text-2xl font-bold text-primary">60%</span>
+                               <span class="text-gray-500">para mim</span>
+                           </div>
+                           <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+                               <span class="text-gray-500">e</span>
+                               <span class="text-2xl font-bold text-secondary">40%</span>
+                               <span class="text-gray-500">para você</span>
+                           </div>
+                           <div class="flex justify-between items-center pt-2">
+                               <span class="text-gray-500">Após 20 dias</span>
+                               <span class="text-xl font-bold text-gray-700">50% / 50%</span>
+                               <span class="text-gray-500">tradicional</span>
+                           </div>
+                       </div>
+                       
+                       <!-- Dados de Locação - Parceria Aceleração -->
+                       <div class="bg-primary/5 rounded-xl p-4 mb-6">
+                           <div class="flex items-center justify-between mb-2">
+                               <div class="flex items-center gap-2">
+                                   <i data-lucide="trending-up" class="w-4 h-4 text-primary"></i>
+                                   <span class="text-sm font-semibold text-gray-700">Resultado médio com Takeover 360º</span>
+                               </div>
+                               <span class="text-lg font-bold text-primary">-78%</span>
+                           </div>
+                           <div class="flex items-center justify-between text-sm">
+                               <span class="text-gray-500">Tempo médio de locação tradicional</span>
+                               <span class="text-gray-500">vs</span>
+                               <span class="text-primary font-bold">20 dias com Takeover</span>
+                           </div>
+                           <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
+                               <div class="bg-primary h-2 rounded-full" style="width: 22%"></div>
+                           </div>
+                           <p class="text-xs text-gray-400 mt-2">92 dias → 20 dias (redução de 78% no tempo)</p>
+                       </div>
+                       
+                       <a href="https://wa.me/5521990650767?text=Olá%20Rodrigo,%20quero%20fazer%20a%20Parceria%20Aceleração%20para%20meus%20imóveis"
+                          target="_blank"
+                          class="block w-full btn-outline text-center py-3 rounded-full font-semibold transition-all">
+                           Quero essa parceria
+                       </a>
+                   </div>
+               </div>
+
+
+
+
+               <!-- Card 2 - Takeover 360º -->
+               <div class="reveal hover-lift bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden relative">
+                   <div class="absolute top-4 right-4">
+                       <span class="bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full border border-accent/20">Mais Popular</span>
+                   </div>
+                   <div class="bg-gradient-to-r from-accent to-gold p-6 text-white">
+                       <div class="flex justify-between items-start">
+                           <div>
+                               <h3 class="text-2xl font-bold">Takeover 360º</h3>
+                               <p class="text-accent-100 text-sm mt-1 opacity-90">Risco e custo zero para você</p>
+                           </div>
+                           <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                               <i data-lucide="shield" class="w-6 h-6 text-white"></i>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="p-8">
+                       <p class="text-gray-600 mb-6 leading-relaxed">
+                           Você entra apenas com o imóvel captado. Eu assumo tudo: coloco meu cartão no tráfego pago, faço as visitas, o laudo técnico, a negociação e o contrato jurídico.
+                       </p>
+                       
+                       <div class="space-y-4 mb-8">
+                           <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+                               <span class="text-gray-500">Comissão para mim</span>
+                               <span class="text-3xl font-bold text-accent">70%</span>
+                           </div>
+                           <div class="flex justify-between items-center pb-4 border-b border-gray-100">
+                               <span class="text-gray-500">Comissão para você</span>
+                               <span class="text-3xl font-bold text-secondary">30%</span>
+                           </div>
+                           <div class="flex justify-between items-center pt-2">
+                               <span class="text-gray-500">Seu investimento</span>
+                               <span class="text-xl font-bold text-green-600">R$ 0,00</span>
+                           </div>
+                       </div>
+                       
+                       <!-- Dados de Locação - Takeover 360º -->
+                       <div class="bg-accent/5 rounded-xl p-4 mb-6">
+                           <div class="flex items-center justify-between mb-2">
+                               <div class="flex items-center gap-2">
+                                   <i data-lucide="clock" class="w-4 h-4 text-accent"></i>
+                                   <span class="text-sm font-semibold text-gray-700">Tempo médio de locação com Takeover</span>
+                               </div>
+                               <span class="text-lg font-bold text-accent">20 dias</span>
+                           </div>
+                           <div class="flex items-center justify-between text-sm">
+                               <span class="text-gray-500">Mercado tradicional</span>
+                               <span class="text-gray-500">vs</span>
+                               <span class="text-accent font-bold">Takeover 360º</span>
+                           </div>
+                           <div class="w-full bg-gray-200 rounded-full h-2 mt-3">
+                               <div class="bg-accent h-2 rounded-full" style="width: 22%"></div>
+                           </div>
+                           <p class="text-xs text-gray-400 mt-2">92 dias → 20 dias (redução de 78% no tempo)</p>
+                       </div>
+                       
+                       <a href="https://wa.me/5521990650767?text=Olá%20Rodrigo,%20quero%20fazer%20a%20Parceria%20Takeover%20360º%20para%20meus%20imóveis"
+                          target="_blank"
+                          class="block w-full btn-secondary text-center py-3 rounded-full font-semibold transition-all">
+                           Quero risco zero
+                       </a>
+                   </div>
+               </div>
+           </div>
+
+
+
+
+           <!-- Benefícios adicionais -->
+           <div class="mt-12 grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+               <div class="text-center p-4 reveal">
+                   <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                       <i data-lucide="badge-check" class="w-6 h-6 text-primary"></i>
+                   </div>
+                   <p class="text-sm text-gray-600">Contrato de parceria com cláusula de performance</p>
+               </div>
+               <div class="text-center p-4 reveal" style="transition-delay: 100ms;">
+                   <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                       <i data-lucide="trending-up" class="w-6 h-6 text-primary"></i>
+                   </div>
+                   <p class="text-sm text-gray-600">Relatórios semanais de performance</p>
+               </div>
+               <div class="text-center p-4 reveal" style="transition-delay: 200ms;">
+                   <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                       <i data-lucide="users" class="w-6 h-6 text-primary"></i>
+                   </div>
+                   <p class="text-sm text-gray-600">Atendimento prioritário via WhatsApp</p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+
+
+   <!-- Autoridade - Quem vai assumir sua carteira -->
+   <section id="autoridade" class="py-24 bg-gray-50 relative">
+       <div class="max-w-7xl mx-auto px-6 lg:px-8">
+           <div class="grid lg:grid-cols-2 gap-12 items-center">
+               <div class="reveal order-2 lg:order-1">
+                   <span class="text-primary text-sm uppercase tracking-[0.3em] font-semibold">Autoridade</span>
+                   <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mt-4 mb-6 text-gray-900">
+                       Quem vai assumir <span class="text-gradient">a sua carteira?</span>
+                   </h2>
+                   
+                   <div class="space-y-6 text-gray-600 text-lg leading-relaxed mb-8">
+                       <p>
+                           <span class="font-bold text-gray-900">Rodrigo de Assis</span> (CRECI SP 49368-J). Personal Broker, Especialista em Imóveis Seletivos e Vistoriador Técnico.
+                       </p>
+                       <p>
+                           Uno a inteligência de marketing digital ao rigor jurídico e estrutural. Meu objetivo não é competir com você, é <span class="font-semibold text-primary">somar forças para girarmos o mercado mais rápido.</span>
+                       </p>
+                   </div>
+
+
+
+
+                   <div class="grid grid-cols-2 gap-4 mb-8">
+                       <div class="flex items-center gap-3 p-3 bg-white rounded-xl shadow-sm">
+                           <i data-lucide="check-circle-2" class="w-5 h-5 text-primary"></i>
+                           <span class="text-sm text-gray-700">+600 imóveis locados em tempo recorde</span>
+                       </div>
+                       <div class="flex items-center gap-3 p-3 bg-white rounded-xl shadow-sm">
+                           <i data-lucide="check-circle-2" class="w-5 h-5 text-primary"></i>
+                           <span class="text-sm text-gray-700">Especialista em Vistorias</span>
+                       </div>
+                       <div class="flex items-center gap-3 p-3 bg-white rounded-xl shadow-sm">
+                           <i data-lucide="check-circle-2" class="w-5 h-5 text-primary"></i>
+                           <span class="text-sm text-gray-700">Tráfego Pago Certificado</span>
+                       </div>
+                       <div class="flex items-center gap-3 p-3 bg-white rounded-xl shadow-sm">
+                           <i data-lucide="check-circle-2" class="w-5 h-5 text-primary"></i>
+                           <span class="text-sm text-gray-700">Contratos Blindados</span>
+                       </div>
+                   </div>
+
+
+
+
+                   <a href="https://wa.me/5521990650767?text=Olá%20Rodrigo,%20quero%20cadastrar%20meus%20imóveis%20para%20parceria"
+                      target="_blank"
+                      class="inline-flex items-center gap-3 btn-primary px-8 py-4 rounded-full font-semibold uppercase tracking-wider shadow-lg shadow-primary/30">
+                       <i data-lucide="message-circle" class="w-5 h-5"></i>
+                       <span>Cadastrar meus imóveis para parceria</span>
+                   </a>
+               </div>
+
+
+
+
+               <div class="reveal order-1 lg:order-2 relative">
+                   <div class="absolute -inset-2 bg-gradient-to-r from-primary to-accent rounded-3xl blur opacity-30"></div>
+                   <div class="relative bg-white p-3 rounded-2xl shadow-2xl">
+                       <div class="aspect-square rounded-xl overflow-hidden relative">
+                           <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" alt="Rodrigo de Assis" class="w-full h-full object-cover object-top">
+                           <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                               <div class="flex items-center gap-2">
+                                   <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse online-badge"></div>
+                                   <span class="text-white text-sm font-medium">Online agora no WhatsApp</span>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="absolute -bottom-4 -right-4 bg-white rounded-full p-3 shadow-lg border-2 border-primary">
+                           <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+                               <i data-lucide="handshake" class="w-8 h-8 text-white"></i>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+
+
+
+   <!-- CTA Final - com contraste melhorado -->
+   <section class="py-20 bg-gradient-to-r from-primary to-primary-dark relative overflow-hidden">
+       <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557425529-b1ae9c141e7d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
+       <div class="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 text-center">
+           <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 drop-shadow-lg">
+               Pronto para destravar seu estoque?
+           </h2>
+           <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto font-medium drop-shadow-md">
+               Junte-se aos corretores que já estão girando o mercado com o <span class="font-bold text-accent-light">Takeover 360º</span>
+           </p>
+           <a href="https://wa.me/5521990650767?text=Olá%20Rodrigo,%20quero%20ser%20um%20corretor%20parceiro%20e%20locar%20meu%20estoque%20parado"
+              target="_blank"
+              class="inline-flex items-center gap-3 bg-white text-primary px-10 py-5 rounded-full font-bold text-lg uppercase tracking-wider hover:shadow-2xl transition-all transform hover:-translate-y-1 shadow-xl">
+               <i data-lucide="users" class="w-6 h-6"></i>
+               <span>Quero ser um Corretor Parceiro</span>
+               <i data-lucide="arrow-right" class="w-5 h-5"></i>
+           </a>
+           <p class="text-white/80 text-sm mt-6 font-medium">Resposta em até 2 horas | Análise sem compromisso</p>
+       </div>
+   </section>
+
+
+
+
+   <!-- Footer -->
+   <footer class="bg-gray-900 border-t border-gray-800 pt-16 pb-8">
+       <div class="max-w-7xl mx-auto px-6 lg:px-8">
+           <div class="grid md:grid-cols-4 gap-12 mb-12">
+               <div class="md:col-span-2">
+                   <div class="flex items-center gap-3 mb-6">
+                       <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                           <i data-lucide="handshake" class="w-6 h-6 text-white"></i>
+                       </div>
+                       <div>
+                           <h2 class="text-xl font-bold tracking-tight text-white">Rodrigo de Assis</h2>
+                           <p class="text-primary text-sm">Vistoriador PRO & Personal Broker</p>
+                       </div>
+                   </div>
+                   <p class="text-gray-400 text-sm max-w-md leading-relaxed">
+                       Parcerias Estratégicas B2B para corretores e imobiliárias que querem escalar suas locações sem aumentar custos operacionais.
+                   </p>
+               </div>
+
+
+
+
+               <div>
+                   <h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Contato</h4>
+                   <ul class="space-y-3 text-sm text-gray-400">
+                       <li class="flex items-center gap-2">
+                           <i data-lucide="phone" class="w-4 h-4 text-primary"></i>
+                           <span>+55 21 99065-0767</span>
+                       </li>
+                       <li class="flex items-center gap-2">
+                           <i data-lucide="mail" class="w-4 h-4 text-primary"></i>
+                           <span>rodrigodeap@gmail.com</span>
+                       </li>
+                       <li class="flex items-center gap-2">
+                           <i data-lucide="map-pin" class="w-4 h-4 text-primary"></i>
+                           <span>São Paulo, SP</span>
+                       </li>
+                   </ul>
+               </div>
+
+
+
+
+               <div>
+                   <h4 class="text-white font-semibold mb-4 uppercase tracking-wider text-sm">Credenciais</h4>
+                   <ul class="space-y-3 text-sm text-gray-400">
+                       <li class="flex items-center gap-2">
+                           <i data-lucide="shield" class="w-4 h-4 text-primary"></i>
+                           <span>CRECI SP 49368-J</span>
+                       </li>
+                       <li class="flex items-center gap-2">
+                           <i data-lucide="file-text" class="w-4 h-4 text-primary"></i>
+                           <span>Especialista em Vistorias</span>
+                       </li>
+                   </ul>
+                  
+                   <div class="flex gap-4 mt-6">
+                       <a href="https://www.instagram.com/odetentor_rodrigoassis/" target="_blank" class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-orange-500 flex items-center justify-center text-white hover:scale-110 transition-all shadow-md">
+                           <i data-lucide="instagram" class="w-5 h-5"></i>
+                       </a>
+                       <a href="https://www.linkedin.com/in/rodrigodeap/" target="_blank" class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center text-white hover:scale-110 transition-all shadow-md">
+                           <i data-lucide="linkedin" class="w-5 h-5"></i>
+                       </a>
+                   </div>
+               </div>
+           </div>
+
+
+
+
+           <div class="h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent mb-8"></div>
+
+
+
+
+           <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+               <p>&copy; 2024 Rodrigo de Assis. Todos os direitos reservados.</p>
+               <p>Parcerias Estratégicas B2B | Takeover 360º</p>
+           </div>
+       </div>
+   </footer>
+
+
+
+
+   <!-- Fixed CTA Button (Mobile) -->
+   <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-gray-200 p-4 z-50 shadow-lg">
+       <a href="https://wa.me/5521990650767?text=Olá%20Rodrigo,%20quero%20ser%20um%20corretor%20parceiro%20e%20locar%20meu%20estoque%20parado"
+          target="_blank"
+          class="btn-secondary w-full py-4 rounded-full font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg">
+           <i data-lucide="message-circle" class="w-5 h-5"></i>
+           <span>Quero ser Parceiro</span>
+       </a>
+   </div>
+
+
+
+
+   <!-- JavaScript -->
+   <script>
+       // Initialize Lucide Icons
+       lucide.createIcons();
+
+
+
+
+       // Mobile Menu Toggle
+       const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+       const mobileMenu = document.getElementById('mobile-menu');
+      
+       if (mobileMenuBtn && mobileMenu) {
+           mobileMenuBtn.addEventListener('click', () => {
+               mobileMenu.classList.toggle('hidden');
+           });
+       }
+
+
+
+
+       // Scroll Reveal Animation
+       const observerOptions = {
+           root: null,
+           rootMargin: '0px',
+           threshold: 0.1
+       };
+
+
+
+
+       const observer = new IntersectionObserver((entries) => {
+           entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                   entry.target.classList.add('active');
+               }
+           });
+       }, observerOptions);
+
+
+
+
+       document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+
+
+
+       // Navbar Scroll Effect
+       const navbar = document.getElementById('navbar');
+
+
+
+
+       window.addEventListener('scroll', () => {
+           const currentScroll = window.pageYOffset;
+          
+           if (currentScroll > 100) {
+               navbar.classList.add('shadow-md');
+           } else {
+               navbar.classList.remove('shadow-md');
+           }
+       });
+
+
+
+
+       // Smooth Scroll for Anchor Links
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function (e) {
+               e.preventDefault();
+               const target = document.querySelector(this.getAttribute('href'));
+               if (target) {
+                   target.scrollIntoView({
+                       behavior: 'smooth',
+                       block: 'start'
+                   });
+                   if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                       mobileMenu.classList.add('hidden');
+                   }
+               }
+           });
+       });
+
+
+
+
+       // Trigger initial reveal
+       setTimeout(() => {
+           document.querySelectorAll('.reveal').forEach(el => {
+               const rect = el.getBoundingClientRect();
+               if (rect.top < window.innerHeight - 100) {
+                   el.classList.add('active');
+               }
+           });
+       }, 500);
+   </script>
+</body>
+</html>
